@@ -1,4 +1,4 @@
-function t = exercicio1(func,func_d,x0)
+function tr = exercicio1(func,func_d,x0)
 
 % nao alterar: inicio
 es = 0.01;
@@ -20,7 +20,7 @@ for ii = 1:length(t_roots) - 1
     endif
         t_roots(ii+1) = t_roots(ii) - func(t_roots(ii))/func_d(t_roots(ii));
     endfor
-t = t_roots(ii)
+tr = t_roots(ii)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
